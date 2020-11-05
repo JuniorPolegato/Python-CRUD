@@ -182,7 +182,6 @@ if __name__ == '__main__':
             print(f"|{'-':->{largura + 3}s}|")
             print('\n'.join(f"|{n}. {opcao:{largura}s}|"
                             for n, opcao in enumerate(opcoes)))
-            return
         while perguntar:
             print(f"|{'-':->{largura + 3}s}|")
             try:
