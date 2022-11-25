@@ -1,3 +1,5 @@
+[English](README_en-us.md)
+
 # CRUD
 CRUD representa as funções basicas para manipulação de dados.
 
