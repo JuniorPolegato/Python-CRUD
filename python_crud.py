@@ -11,7 +11,7 @@ def crud_create(table, fields, register=None,
     ''' id is autonum '''
     id_pk = (len(table) and max(table)) + 1
     if not register:
-        register = {}
+        register = {}   
         for field, cast in fields.items():
             while True:
                 try:
@@ -56,7 +56,7 @@ def crud_read(table, search=None, empty="List is empty", just_verify=False):
     return True
 
 
-def crud_update(table, id_pk, register=None, fileds=None,
+def crud_update(table, id_pk, register=None, fields=None,
                 not_found="not found.",
                 fields_error="Not all fields in register."):
     if id_pk not in table:
